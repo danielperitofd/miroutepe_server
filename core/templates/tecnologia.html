@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <link rel="stylesheet" href="{% static 'css/sec2_cards_style.css' %}">
+
+    <div class="cardsec1-container">
+        <div class="cardsec1-photo">
+            <img src="{% static 'img/cardshome/tecnologia.jpg' %}" alt="Foto de Daniel Alves" class="cardsec1-img">
+        </div>
+        <div class="cardsec1-content">
+            <h1 class="cardsec1-name">Nossa TECNOLOGIA</h1>
+            <p class="cardsec1-subtitle">Inovação em cada etapa da cadeia do leite</p>
+            <p class="cardsec1-bio">
+                A MiRoute utiliza sensores inteligentes e tecnologia IoT para monitorar a qualidade do leite em tempo real, desde a ordenha até a chegada ao laticínio. Os dados são transmitidos automaticamente para nosso sistema em nuvem, que integra tudo em um aplicativo intuitivo para produtores, técnicos e laticínios. Isso permite rastreabilidade, controle de temperatura, e detecção de fraudes de forma automática e segura.
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

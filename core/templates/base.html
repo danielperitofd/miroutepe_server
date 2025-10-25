@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiRoute</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/solucoes_style.css' %}">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'img/logo/logo1.png' %}" alt="MiRoute Logo" style="height: 100px;">
+            </a>
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="{% url 'home' %}"><i data-lucide="home"></i> Home</a></li>
+                <li><a href="{% url 'tecnologia' %}"><i data-lucide="cpu"></i> Tecnologia</a></li>
+                <li><a href="{% url 'perguntas' %}"><i data-lucide="help-circle"></i> Perguntas</a></li>
+                <li><a href="{% url 'parceiros' %}"><i data-lucide="users"></i> Parceiros</a></li>
+                <li><a href="{% url 'vantagens' %}"><i data-lucide="star"></i> Vantagens</a></li>
+                <li><a href="{% url 'sobre' %}"><i data-lucide="user"></i> Sobre</a></li>
+                <li><a href="{% url 'solucoes' %}"><i data-lucide="lightbulb"></i> Soluções</a></li>
+                <li><a href="{% url 'suporte' %}"><i data-lucide="life-buoy"></i> Suporte</a></li>
+                <li><a href="{% url 'localizacao' %}"><i data-lucide="map-pin"></i> Localização</a></li>
+                <li><a href="{% url 'contato' %}"><i data-lucide="message-circle"></i> Contato</a></li>
+                <li><a href="{% url 'login' %}"><i data-lucide="log-in"></i> Login</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Banner Carrossel -->
+    <section class="carrossel">
+        <div class="slides">
+            <img src="{% static 'img/banner/banner1.png' %}" alt="Banner 1">
+            <img src="{% static 'img/banner/banner2.png' %}" alt="Banner 2">
+            <img src="{% static 'img/banner/banner3.png' %}" alt="Banner 3">
+            <img src="{% static 'img/banner/banner4.png' %}" alt="Banner 4">
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 MiRoute. Todos os direitos reservados.
+        <div class="social">
+            <a href="https://www.instagram.com/miroutepe/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24">
+            </a>
+            <a href="https://wa.me/5587999204532" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24">
+            </a>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    
+</body>
+</html>

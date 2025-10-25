@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <link rel="stylesheet" href="{% static 'css/sec2_cards_style.css' %}">
+
+    <div class="cardsec1-container">
+        <div class="cardsec1-photo">
+            <img src="{% static 'img/cardshome/perguntas.jpg' %}" alt="Foto de Daniel Alves" class="cardsec1-img">
+        </div>
+        <div class="cardsec1-content">
+            <h1 class="cardsec1-name">PERGUNTAS e RESPOSTAS</h1>
+            <p class="cardsec1-subtitle">Dúvidas comuns sobre a MiRoute</p>
+            <p class="cardsec1-bio">
+                <p></p> 
+                1. Como os dados são enviados? 
+                <p>Via conexão celular (chip IoT), direto para nosso sistema em nuvem.</p>
+                2. Precisa de internet na fazenda? 
+                <p>Não. O dispositivo já possui conectividade própria.</p>
+                3. Quais dados são monitorados? 
+                <p>Temperatura, condutividade, tempo de coleta, e outros parâmetros da qualidade.</p>
+                4. Quem pode acessar os dados?
+                <p>Somente usuários autorizados (produtor, técnico e laticínio).</p>
+                5. Posso usar em qualquer tanque?
+                <p>Sim. A tecnologia é compatível com tanques e ordenhadeiras convencionais.</p>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

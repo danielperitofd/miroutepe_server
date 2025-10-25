@@ -1,0 +1,54 @@
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card-solucao {
+    background: #c2e2e7; /* Verde abacate */
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-solucao:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  .card-solucao img {
+    width: 100%;
+    border-radius: 15px; /* ⬅️ deixa a imagem com cantos arredondados */
+    margin-bottom: 15px;
+  }
+  
+  .card-solucao h3 {
+    margin: 10px 0;
+    color: #2c462e;
+  }
+  
+  .card-solucao p {
+    color: #333;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+  }
+  
+  .btn-saiba {
+    background: #628A4C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-saiba:hover {
+    background: #4e6f3a;
+  }
+  

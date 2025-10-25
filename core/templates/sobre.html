@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{% static 'css/sec2_cards_style.css' %}">
+
+<div class="cardsec1-container">
+    <div class="cardsec1-photo">
+        <img src="{% static 'img/cardshome/sobre.jpg' %}" alt="Foto da MiRoute" class="cardsec1-img">
+    </div>
+    <div class="cardsec1-content">
+        <h1 class="cardsec1-name">SOBRE a MiRoute</h1>
+        <p class="cardsec1-subtitle">Conectando o campo à qualidade real</p>
+        <p class="cardsec1-bio">
+            A MiRoute nasceu com a missão de elevar o padrão da produção leiteira brasileira através da tecnologia. 
+            Unimos hardware inteligente, software acessível e dados confiáveis para transformar a forma como o leite 
+            é monitorado, transportado e entregue. Somos uma startup formada por profissionais de tecnologia e 
+            especialistas do setor agro, com o propósito de levar inovação até onde ela mais importa: o campo.
+        </p>
+    </div>
+</div>
+
+<!-- Cards separados para Missão, Visão e Valores -->
+<div class="cardsec1-info-cards">
+    <div class="cardsec1-info-card">
+        <h2 class="cardsec1-info-title">Nossa Missão</h2>
+        <p class="cardsec1-info-text">
+            Garantir leite de qualidade desde a origem. Queremos assegurar que o leite chegue ao consumidor final com 
+            qualidade comprovada e rastreável, valorizando o produtor, protegendo o laticínio e promovendo saúde para todos. 
+            Isso só é possível com soluções que combinem simplicidade, inteligência e acessibilidade.
+        </p>
+    </div>
+    <div class="cardsec1-info-card">
+        <h2 class="cardsec1-info-title">Visão de Futuro</h2>
+        <p class="cardsec1-info-text">
+            Ser referência em qualidade e inovação no agro brasileiro. Nossa visão é liderar a transformação digital na cadeia do leite, 
+            sendo reconhecidos por gerar impacto positivo em produtividade, sustentabilidade e confiança em todo o ecossistema agroindustrial.
+        </p>
+    </div>
+    <div class="cardsec1-info-card">
+        <h2 class="cardsec1-info-title">Valores</h2>
+        <ul class="cardsec1-info-list">
+            <li>Inovação com propósito</li>
+            <li>Compromisso com a qualidade</li>
+            <li>Sustentabilidade e responsabilidade ambiental</li>
+            <li>Ética e transparência</li>
+            <li>Foco em resultados reais para o produtor</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

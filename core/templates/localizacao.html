@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{% static 'css/card_style.css' %}">
+
+<div class="contato-wrapper">
+  <h1>NOSSO LOCALIZAÇÃO</h1>
+
+    <div class="contato-flex">
+        <!-- Card de contato -->
+        <div class="contact-card">
+        <h2>Fale Conosco</h2>
+        <p>📞 <a href="https://wa.me/5587999650221" target="_blank">WhatsApp</a></p>
+        <p>💬 +55 87 99965-0221</p>
+        <p>📧 <a href="mailto:contato@miroute.com.br">contato@miroute.com.br</a></p>
+        <p>📍 Garanhuns - Pernambuco - Brasil</p>
+    </div>
+
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15760.717390010764!2d-36.49672935!3d-8.88243065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a9bfb94d25cdd3%3A0x67e00cf06b3f4c1c!2sGaranhuns%2C%20PE%2C%2055298-000!5e0!3m2!1spt-BR!2sbr!4v1714782543539!5m2!1spt-BR!2sbr" 
+            width="800" 
+            height="500" 
+            style="border:0; border-radius: 10px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    
+</div>
+
+{% endblock %}

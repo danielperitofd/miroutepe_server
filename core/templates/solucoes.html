@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<h1 style="text-align: center; color: #2c462e;">Nossas Soluções Tecnológicas</h1>
+<p style="text-align: center; font-size: 1.5rem; max-width: 900px; margin: auto; color: #555;">
+Na MiRoute, oferecemos soluções inovadoras em IoT, automação e conectividade para transformar o seu negócio.</p>
+
+<section class="cards-section">
+
+    <!-- Card 1 -->
+    <div class="card-solucao">
+        <img src="{% static 'img/solucoes/caminhao.jpg' %}" alt="Monitoramento">
+        <h3>Roteirização e Tempo Real</h3>
+        <p>Acompanhe o trajeto do caminhão e o tempo estimado de chegada.</p><br>
+        <a href="{% url 'construcao' %}" class="btn-saiba">Saiba mais</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-solucao">
+        <img src="{% static 'img/solucoes/conectividade.jpg' %}" alt="Monitoramento">
+        <h3>Conectividade com Aplicativo</h3>
+        <p>Visualize e acompanhe os dados da coleta em tempo real no aplicativo oficial. </p><br>
+        <a href="{% url 'construcao' %}" class="btn-saiba">Saiba mais</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-solucao">
+        <img src="{% static 'img/solucoes/palmhand.jpg' %}" alt="Monitoramento">
+        <h3>Tecnologia na palma da mão</h3>
+        <p>Um dispositivo intuitivo e robusto que simplifica a coleta de dados. </p><br>
+        <a href="{% url 'construcao' %}" class="btn-saiba">Saiba mais</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-solucao">
+        <img src="{% static 'img/solucoes/analiseleite.jpg' %}" alt="Monitoramento">
+        <h3>Análise Instantânea do Leite</h3>
+        <p>Realize análises do leite no momento da coleta com nosso dispositivo portátil. </p><br>
+        <a href="{% url 'construcao' %}" class="btn-saiba">Saiba mais</a>
+    </div>
+ 
+    <!-- Card 5 -->
+    <div class="card-solucao">
+        <img src="{% static 'img/solucoes/laticinio.jpg' %}" alt="Monitoramento">
+        <h3>Integração com o Laticínio</h3>
+        <p>Dados ao vivo para tomada de decisão, 
+            Informações da coleta chegam instantaneamente ao laticínio.</p><br>
+        <a href="{% url 'construcao' %}" class="btn-saiba">Saiba mais</a>
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <link rel="stylesheet" href="{% static 'css/team_style.css' %}">
+
+    <div class="profile-container">
+        <div class="profile-photo">
+            <img src="{% static 'img/team/daniel.png' %}" alt="Profile" class="profile">
+        </div>
+        <div class="profile-content">
+            <h1 class="profile-name">Daniel Alves</h1>
+            <p class="profile-subtitle">Desenvolvedor Full Stack & Cyber Security</p>
+            <p class="profile-bio">
+                João é um profissional apaixonado por tecnologia, com mais de 10 anos de experiência em desenvolvimento web e ensino de programação para jovens e adultos. Ele atua na formação de novos talentos da área de TI, promovendo projetos que unem teoria e prática. <br><br>
+                Ao longo da carreira, João participou de iniciativas inovadoras, incluindo programas de empreendedorismo digital e oficinas de Internet das Coisas (IoT) para escolas técnicas. Seu foco está na democratização do conhecimento e no uso de ferramentas modernas para resolver problemas reais.
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+

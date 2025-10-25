@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sec1_style.css' %}">
+
+<div class="card-container">
+
+    <div class="home_section1_card-container">
+        <div class="home_section1_card">
+            <div class="top"></div>
+            <img src="{% static 'img/cardshome/tecnologia.jpg' %}" class="home_section1_profile" alt="Tecnologia"><br>
+            <div class="home_section1_title">Tecnologia</div><br>
+            <div class="home_section1_subtitle">Avanços e soluções</div>
+            <a href="{% url 'tecnologia' %}" class="home_section1_message-btn">Acessar</a><br>
+        </div>
+    </div>
+
+    <div class="home_section1_card-container">
+        <div class="home_section1_card">
+            <div class="top"></div>
+            <img src="{% static 'img/cardshome/perguntas.jpg' %}" class="home_section1_profile" alt="Perguntas"><br>
+            <div class="home_section1_title">Perguntas</div><br>
+            <div class="home_section1_subtitle">Tire suas dúvidas</div>
+            <a href="{% url 'perguntas' %}" class="home_section1_message-btn">Acessar</a><br>
+        </div>
+    </div>
+
+    <div class="home_section1_card-container">
+        <div class="home_section1_card">
+            <div class="top"></div>
+            <img src="{% static 'img/cardshome/parceiros.jpg' %}" class="home_section1_profile" alt="Parceiros"><br>
+            <div class="home_section1_title">Parceiros</div><br>
+            <div class="home_section1_subtitle">Quem está com a gente</div>
+            <a href="{% url 'parceiros' %}" class="home_section1_message-btn">Acessar</a><br>
+        </div>
+    </div>
+
+    <div class="home_section1_card-container">
+        <div class="home_section1_card">
+            <div class="top"></div>
+            <img src="{% static 'img/cardshome/vantagens.jpg' %}" class="home_section1_profile" alt="Vantagens"><br>
+            <div class="home_section1_title">Vantagens</div><br>
+            <div class="home_section1_subtitle">Benefícios da solução</div>
+            <a href="{% url 'vantagens' %}" class="home_section1_message-btn">Acessar</a><br>
+        </div>
+    </div>
+</div>
+
+<h1 style="text-align: center;">NOSSO TIME</h1>
+
+{% include 'cards_home.html' %}
+{% endblock %}

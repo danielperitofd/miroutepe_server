@@ -1,0 +1,17 @@
+# /etc/cloudflared/config.yml  (UM só)
+tunnel: c8daecb0-a25e-47d3-aedf-4f6e58981468
+credentials-file: /etc/cloudflared/c8daecb0-a25e-47d3-aedf-4f6e58981468.json
+
+ingress:
+  - hostname: miroutepe.com.br
+    service: http://127.0.0.1:80
+  - hostname: www.miroutepe.com.br
+    service: http://127.0.0.1:80
+  - hostname: agrogestor.miroutepe.com.br
+    service: http://127.0.0.1:80
+  - hostname: imaestry.miroutepe.com.br
+    service: http://127.0.0.1:80
+  - hostname: ipatrimonium.miroutepe.com.br
+    service: http://127.0.0.1:80
+  - service: http_status:404
+

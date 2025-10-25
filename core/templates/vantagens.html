@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <link rel="stylesheet" href="{% static 'css/sec2_cards_style.css' %}">
+
+    <div class="cardsec1-container">
+        <div class="cardsec1-photo">
+            <img src="{% static 'img/cardshome/vantagens.jpg' %}" alt="Foto de Daniel Alves" class="cardsec1-img">
+        </div>
+        <div class="cardsec1-content">
+            <h1 class="cardsec1-name">VANTAGEM com a MiROUTE</h1>
+            <p class="cardsec1-subtitle">Mais controle, menos desperdício</p>
+            <p class="cardsec1-bio">
+                Com o dispositivo MiRoute, produtores e laticínios reduzem perdas, garantem a qualidade do leite e aumentam a confiança no processo. A coleta de dados em tempo real evita coletas desnecessárias, identifica problemas de forma precoce e facilita auditorias com registros digitais. Além disso, a instalação é simples e o uso é acessível até para quem não tem familiaridade com tecnologia.
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

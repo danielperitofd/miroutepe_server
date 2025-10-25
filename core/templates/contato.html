@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+{% block main %}
+
+<!-- core/templates/core/contato.html -->
+{% load static %}
+
+
+  <link rel="stylesheet" href="{% static 'css/contato_style.css' %}">
+
+  <div class="container" id="contato">
+    <div class="titulo">
+
+ <!-- <h1>Entre em <span>CONTATO</span></h1> -->
+      <h1>
+        <span class="titulo-parte1">ENTRE em</span><br>
+        <span class="titulo-parte2">CONTATO</span>
+      </h1>
+
+    </div>
+    <div class="formulario">
+      <form method="POST">
+        {% csrf_token %}
+        <h2>Envie sua mensagem</h2>
+        {{ form.as_p }}
+        <div class="botoes">
+          <button type="submit">Enviar Mensagem</button>
+          <a href="https://api.whatsapp.com/send?phone=5587999650221&text=Ol%C3%A1%20MiRoute%2C%20preciso%20de%20ajuda!" target="_blank">
+            <button type="button" class="whatsapp-btn">WhatsApp</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

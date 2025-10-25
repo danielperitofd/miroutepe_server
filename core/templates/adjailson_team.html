@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <link rel="stylesheet" href="{% static 'css/team_style.css' %}">
+
+    <div class="profile-container">
+        <div class="profile-photo">
+            <img src="{% static 'img/team/adjailson.png' %}" alt="Profile" class="profile">
+        </div>
+        <div class="profile-content">
+            <h1 class="profile-name">Adjailson</h1>
+            <p class="profile-subtitle">Desenvolvedor Full Stack & Gerente de Projetos</p>
+            <p class="profile-bio">
+                Analista | Engenheiro de dados com experiência em desenvolvimento backend, Especialista em Manipulação e Visualização de Dados, apaixonado por transformar dados em insights e construir soluções escaláveis. Atualmente, estou trabalhando com as seguintes tecnologias Linguagens e frameworks: Python | SQL | Django | Django Rest Framework | Flask |
+                Bancos de dados: PostgreSQL | MySQL | SQLite | Git | APIs REST | Bootstrap | FastAPI | Pandas | NumPy | Power BI | Matplotlib
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
